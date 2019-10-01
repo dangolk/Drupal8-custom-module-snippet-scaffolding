@@ -7,3 +7,11 @@ drupal cache:rebuild
 
 # List all registered routes:
 drupal router:debug
+
+# Find specific route using wildcard:
+drupal router:debug | grep '{keyword}'
+e.g. drupal router:debug | grep 'ajax'
+
+# Find detailed information about specific route:
+drupal router:debug {route machine name}
+e.g. drupal router:debug views.ajax
